@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import HomePage from './Pages/HomePage';
 
-const App =()=>(
-  <div>
-    this is a tset
-  </div>
-)
+function App() {
+  return(
+    <HomePage/>
+  )
+}
 
 export default App;
