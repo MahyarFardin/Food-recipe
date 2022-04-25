@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react/cjs/react.development";
+import Container from "../Contianer/Container";
 
 const Popular = () => {
     const [popular, setPopular] = useState([]);
@@ -13,17 +14,7 @@ const Popular = () => {
     };
 
     return (
-        <div>
-            {
-                popular.map((item) => {
-                    return (
-                        <div key={item.id}>
-                            <p>{item.title}</p>
-                        </div>
-                    );
-                })
-            }
-        </div>
+        <Container popular={popular} />
     );
 }
 
