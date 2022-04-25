@@ -1,14 +1,13 @@
 import React from "react";
-import { useState } from "react/cjs/react.development";
-import { useEffect } from "react/cjs/react.production.min";
+import { useEffect, useState } from "react/cjs/react.development";
 
 const Popular = () => {
     const [popular, setPopular] = useState([]);
 
-    getPop;
+    useEffect(() => { getPop(); }, []);
 
     const getPop = async () => {
-        const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.API_KEY}&number=9`);
+        const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9`);
         const jsonData = await api.json();
         setPopular(jsonData.recipes);
     };
@@ -16,12 +15,12 @@ const Popular = () => {
     return (
         <div>
             {
-                popular.map(item => {
-                    <div>
-                        <p>
-                            {item.title}
-                        </p>
-                    </div>
+                popular.map((item) => {
+                    return (
+                        <div key={item.id}>
+                            <p>{item.title}</p>
+                        </div>
+                    );
                 })
             }
         </div>
