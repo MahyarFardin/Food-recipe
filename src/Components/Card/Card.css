@@ -1,0 +1,13 @@
+.card-in{
+    display: inline-flex;
+    flex-direction: column;
+    flex: 1;
+    width: 20%;
+    margin: 1em;
+}
+span{
+    text-align: center;
+}
+img{
+    border-radius: 2em;
+}

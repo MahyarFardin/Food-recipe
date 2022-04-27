@@ -1,0 +1,5 @@
+.container{
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: row;
+}
