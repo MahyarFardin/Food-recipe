@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect, useState } from "react/cjs/react.development";
+import { useState, useEffect } from 'react';
 import Container from "../Contianer/Container";
 
 const Popular = () => {
