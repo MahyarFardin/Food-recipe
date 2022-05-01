@@ -3,7 +3,7 @@ import "./Card.css";
 
 const Card = ({ item }) => {
     return (
-        <div className="card-in">
+        <div key={item.id} className="card-in">
             <img src={`${item.image}`} alt="image of food" />
             <span>{item.title}</span>
         </div>
