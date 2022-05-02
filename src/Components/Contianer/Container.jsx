@@ -5,19 +5,19 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import '@splidejs/react-splide/css';
 
 
-const Container = ({ popular }) => {
+const Container = ({ numberOfCards, items, cardStyle }) => {
 
     return (
         <Splide options={{
-            perPage: 4,
+            perPage: numberOfCards,
             pagination: false,
-            gap: "5rem",
-            arrows: false
+            arrows: false,
+            type:"loop"
         }}>
-            {popular.map(item => {
+            {items.map(item => {
                 return (
                     <SplideSlide>
-                        < Card item={item} className="card-item" />
+                        < Card item={item} cardStyle={cardStyle} />
                     </SplideSlide>
                 )
             })}

@@ -1,11 +1,11 @@
 import React from "react";
-import Popular from "../Components/Popular/Popular.component";
-import Vegan from "../Components/Vegan/Vegan.component";
+import Framer from "../Components/Framer/Framer";
+import "./HomePage.css"
 
 const HomePage = () => (
-    <div>
-        <Popular />
-        <Vegan />
+    <div className="home-page">
+        <Framer numberOfCards={4} cardStyle={"small"} tag={"populer"} header={"Most Populer"}/>
+        <Framer numberOfCards={3} cardStyle={"larg"} tag={"Veggies"} header={"Vegetarian"}/>
     </div>
 )
 
