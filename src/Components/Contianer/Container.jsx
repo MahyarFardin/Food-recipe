@@ -8,7 +8,12 @@ import '@splidejs/react-splide/css';
 const Container = ({ popular }) => {
 
     return (
-        <Splide>
+        <Splide options={{
+            perPage: 4,
+            pagination: false,
+            gap: "5rem",
+            arrows: false
+        }}>
             {popular.map(item => {
                 return (
                     <SplideSlide>

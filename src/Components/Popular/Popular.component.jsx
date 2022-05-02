@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from 'react';
 import Container from "../Contianer/Container";
+import "./Popular.css"
 
 const Popular = () => {
     const [popular, setPopular] = useState([]);
@@ -14,7 +15,10 @@ const Popular = () => {
     };
 
     return (
-        <Container popular={popular} />
+        <div className="popular-container">
+            <h3>Popular Foods</h3>
+            <Container popular={popular} />
+        </div>
     );
 }
 
