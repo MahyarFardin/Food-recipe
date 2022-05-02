@@ -1,6 +1,6 @@
 import React from "react";
-import Framer from "../Components/Framer/Framer";
-import "./HomePage.css"
+import Framer from "../../Components/Framer/Framer";
+import "./HomePage.css";
 
 const HomePage = () => (
     <div className="home-page">

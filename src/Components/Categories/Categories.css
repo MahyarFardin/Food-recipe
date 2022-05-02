@@ -1,0 +1,7 @@
+.categories{
+    display: flex;
+    justify-content: center;
+}
+.icons{
+    margin: 20px;
+}
