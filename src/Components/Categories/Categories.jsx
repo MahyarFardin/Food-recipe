@@ -53,7 +53,7 @@ const iconBar = () => {
                             background: '#808080',
                         }
                         : { color: '#545e6f' }
-                } to={'/Countries/Thia'}>
+                } to={'/Countries/Thai'}>
                 <GiNoodles className="icons" size={size} />
             </NavLink>
 
