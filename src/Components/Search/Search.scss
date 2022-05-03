@@ -1,0 +1,23 @@
+.search{
+    display: block;
+    margin: 1em auto;
+    width: 50%;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #545e6f;
+    color: white;
+    font-size: 20px;
+    border: none;
+    
+    &:focus{
+        outline: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    &::placeholder{
+        color: white;
+        text-transform: uppercase;
+        padding-left: 1em;
+    }    
+}

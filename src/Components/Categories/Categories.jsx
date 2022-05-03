@@ -14,7 +14,7 @@ const iconBar = () => {
                 isActive
                     ? {
                         color: '#fff',
-                        background: '#808080',
+                        background: '#545e6f',
                     }
                     : { color: '#545e6f' }
             } to={'/'}>
@@ -25,7 +25,7 @@ const iconBar = () => {
                 isActive
                     ? {
                         color: '#fff',
-                        background: '#808080',
+                        background: '#545e6f',
                     }
                     : { color: '#545e6f' }
             } to={'/Countries/Italian'}>
@@ -37,7 +37,7 @@ const iconBar = () => {
                     isActive
                         ? {
                             color: '#fff',
-                            background: '#808080',
+                            background: '#545e6f',
                         }
                         : { color: '#545e6f' }
                 }
@@ -50,7 +50,7 @@ const iconBar = () => {
                     isActive
                         ? {
                             color: '#fff',
-                            background: '#808080',
+                            background: '#545e6f',
                         }
                         : { color: '#545e6f' }
                 } to={'/Countries/Thai'}>
@@ -62,7 +62,7 @@ const iconBar = () => {
                     isActive
                         ? {
                             color: '#fff',
-                            background: '#808080',
+                            background: '#545e6f',
                         }
                         : { color: '#545e6f' }
                 } to={'/Countries/Japanese'}>

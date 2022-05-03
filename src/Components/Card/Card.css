@@ -5,6 +5,10 @@
     position: relative;
     margin: 2em;
 }
+.small:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
 
 .small{
     width: 250px;
