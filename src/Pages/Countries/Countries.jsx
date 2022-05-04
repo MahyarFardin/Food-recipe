@@ -12,7 +12,7 @@ const Countries = () => {
     useEffect(() => { informationFetch(params.type); }, [params.type]);
 
     const informationFetch = async (countrie) => {
-        const api = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&cuisine=${countrie}`);
+        const api = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&query=${countrie}`);
         const jsonData = await api.json();
         setFoods(jsonData.results);
     };

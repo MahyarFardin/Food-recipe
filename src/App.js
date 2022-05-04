@@ -13,7 +13,7 @@ function App() {
       <Search/>
       <Routes>
         <Route path='/' element={<HomePage />} />
-        <Route path='/countries/:type' element={<Countries />} />
+        <Route path='/category/:type' element={<Countries />} />
       </Routes>
     </BrowserRouter>
   )

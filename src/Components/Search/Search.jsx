@@ -1,17 +1,23 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Search.css";
 
 const Search = () => {
-    const [item, setItem]=useState();
+    const [item, setItem] = useState();
+    const navigate=useNavigate();
+
+    const submitHandler = (e) => {
+        e.preventDefault();
+        navigate("/category/"+item);
+    }
 
     return (
-        <div className="search-div">
-            <NavLink to={`/Countries/`}>
-                <input type={"search"} className="search" onChange={e=>setItem(e)} placeholder="Search for other categories" />
-            </NavLink>
-        </div>
+        <form onSubmit={submitHandler}>
+            <div className="search-div">
+                <input type={"search"} className="search" onChange={e => setItem(e.target.value)} placeholder="Search for other categories" />
+            </div>
+        </form>
     )
 }
 

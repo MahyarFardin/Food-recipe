@@ -28,7 +28,7 @@ const iconBar = () => {
                         background: '#545e6f',
                     }
                     : { color: '#545e6f' }
-            } to={'/Countries/Italian'}>
+            } to={'/category/Italian'}>
                 <FaPizzaSlice className="icons" size={size} />
             </NavLink>
 
@@ -41,7 +41,7 @@ const iconBar = () => {
                         }
                         : { color: '#545e6f' }
                 }
-                to={'/Countries/American'}>
+                to={'/category/American'}>
                 <FaHamburger className="icons" size={size} />
             </NavLink>
 
@@ -53,7 +53,7 @@ const iconBar = () => {
                             background: '#545e6f',
                         }
                         : { color: '#545e6f' }
-                } to={'/Countries/Thai'}>
+                } to={'/category/Thai'}>
                 <GiNoodles className="icons" size={size} />
             </NavLink>
 
@@ -65,7 +65,7 @@ const iconBar = () => {
                             background: '#545e6f',
                         }
                         : { color: '#545e6f' }
-                } to={'/Countries/Japanese'}>
+                } to={'/category/Japanese'}>
                 <GiChopsticks className="icons" size={size} />
             </NavLink>
         </div>
