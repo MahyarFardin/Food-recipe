@@ -1,0 +1,14 @@
+.container{
+    margin: 2em;
+}
+h3{
+    display: block;
+}
+img{
+    display: inline-block;
+    width: 30%;
+}
+p{
+    float: right;
+    margin-left: 50%;
+}
