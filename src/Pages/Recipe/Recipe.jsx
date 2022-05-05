@@ -5,6 +5,7 @@ import "./Recipe.css"
 
 const Recipe = (e) => {
     const [recipe, setRecipe] = useState([]);
+    const [text, setText] = useState("");
 
     let params = useParams();
 
@@ -18,11 +19,29 @@ const Recipe = (e) => {
         fetchInfo();
     }, [params.name]);
 
+    const handleClick = (e) => {
+        e.preventDefault();
+        if (e.target.innerHTML === "Instructions")
+            setText("2")
+        else
+            setText("1")
+    }
+
     return (
         <div className="container">
-            <h3>{recipe.title}</h3>
-            <img src={`${recipe.image}`} alt="" />
-            <p>{recipe.summary}</p>
+            <h3 className="recipe-title">{recipe.title}</h3>
+
+            <div className="buttons">
+                <button onClick={e => { handleClick(e) }}>Instructions</button>
+                <button onClick={e => { handleClick(e) }}>Ingridiants</button>
+            </div>
+
+            <div className="container-info">
+                <img className="recipe-img" src={`${recipe.image}`} alt="" />
+                <div className="p-container">
+                    <p dangerouslySetInnerHTML={{ __html: text === "1" ? recipe.summary : recipe.instructions }} className="recipe-p" />
+                </div>
+            </div>
         </div>
     )
 }

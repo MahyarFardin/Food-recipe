@@ -1,0 +1,43 @@
+.container{
+    margin: 2em;
+    display: block;
+}
+.buttons{
+    text-align: center;
+    button{
+        padding: 1em 2em;
+        text-transform: uppercase;
+        margin: .5em;
+        background-color: black;
+        color: white;
+        border:none;
+        font-weight: bolder;
+    }
+}
+.container-info{
+    display: flex;
+    flex-direction: row;
+    margin: 2em;
+}
+.recipe-title{
+    text-align: center;
+}
+.recipe-img{
+    position: relative;
+    flex:1;
+    width: 30%;
+    margin: 2em;
+    border-radius: 0%;
+}
+.p-container{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.recipe-p{
+    position: relative;
+    font-size: 20px;
+    a{
+        color: black;
+    }
+}
