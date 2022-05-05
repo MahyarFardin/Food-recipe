@@ -9,10 +9,10 @@ This is an app that show differant foods and it has the abality to search foods 
 - [x] css
 - [x] sass
 - [x] Router Dom
-- [x] Components based designe
+- [x] Component based designe
 
 # Folder tree
-'''
+```
 ├── App.css
 ├── App.js
 ├── Components
@@ -47,7 +47,8 @@ This is an app that show differant foods and it has the abality to search foods 
         ├── Recipe.css.map
         ├── Recipe.jsx
         └── Recipe.scss
-'''
+```
 # Over viwe
 
-[![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://www.youtube.com/watch?v=ek1j272iAmc)
+https://user-images.githubusercontent.com/95848199/167006438-365ae27e-19ec-4e82-bb1d-13351e524254.mp4
+
