@@ -1,6 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Card from "../../Components/Card/Card";
 import "./Countries.css";

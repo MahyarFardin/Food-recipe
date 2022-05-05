@@ -14,12 +14,6 @@
         color: white;
         border: none;
         font-weight: bolder;
-
-        .active {
-            background-color: white;
-            color: black;
-            border: 1px solid black;
-        }
     }
 }
 
@@ -47,6 +41,11 @@
     flex: 1;
     display: flex;
     align-items: center;
+    .active {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+    }
 }
 
 .recipe-p {

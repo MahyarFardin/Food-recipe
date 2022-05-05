@@ -35,8 +35,8 @@ const Recipe = (e) => {
                 <img className="recipe-img" src={`${recipe.image}`} alt="" />
                 <div className="p-container">
                     <div className="buttons">
-                        <button className={text === "1" ? "active" : ""} onClick={e => { handleClick(e) }}>Instructions</button>
-                        <button className={text === "2" ? "active" : ""} onClick={e => { handleClick(e) }}>Ingridiants</button>
+                        <button className={text === "2" ? "active" : ""} onClick={e => { handleClick(e) }}>Instructions</button>
+                        <button className={text === "1" ? "active" : ""} onClick={e => { handleClick(e) }}>Ingridiants</button>
                     </div>
                     <p dangerouslySetInnerHTML={{ __html: text === "1" ? recipe.summary : recipe.instructions }} className="recipe-p" />
                 </div>

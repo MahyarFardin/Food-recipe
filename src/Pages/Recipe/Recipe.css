@@ -17,12 +17,6 @@
   font-weight: bolder;
 }
 
-.buttons button .active {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-}
-
 .container-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,6 +57,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.p-container .active {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }
 
 .recipe-p {
