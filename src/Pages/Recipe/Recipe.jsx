@@ -31,14 +31,13 @@ const Recipe = (e) => {
         <div className="container">
             <h3 className="recipe-title">{recipe.title}</h3>
 
-            <div className="buttons">
-                <button onClick={e => { handleClick(e) }}>Instructions</button>
-                <button onClick={e => { handleClick(e) }}>Ingridiants</button>
-            </div>
-
             <div className="container-info">
                 <img className="recipe-img" src={`${recipe.image}`} alt="" />
                 <div className="p-container">
+                    <div className="buttons">
+                        <button className={text === "1" ? "active" : ""} onClick={e => { handleClick(e) }}>Instructions</button>
+                        <button className={text === "2" ? "active" : ""} onClick={e => { handleClick(e) }}>Ingridiants</button>
+                    </div>
                     <p dangerouslySetInnerHTML={{ __html: text === "1" ? recipe.summary : recipe.instructions }} className="recipe-p" />
                 </div>
             </div>
