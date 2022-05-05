@@ -7,7 +7,7 @@ const Card = ({ item, cardStyle }) => {
         <div key={item.id} className={`card-in ${cardStyle}`}>
             <Link to={"/recipe/" + item.id}>
                 <img src={`${item.image}`} alt="image of food" />
-                <span>{item.title}</span>
+                <span className="card-span">{item.title}</span>
             </Link>
         </div>
     )

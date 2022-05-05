@@ -20,7 +20,7 @@
     height: 200px;
 }
 
-span{
+.card-span{
     position: absolute;
     text-align: center;
     color: white;

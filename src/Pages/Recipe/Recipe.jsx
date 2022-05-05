@@ -3,9 +3,9 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./Recipe.css"
 
-const Recipe = (e) => {
+const Recipe = () => {
     const [recipe, setRecipe] = useState([]);
-    const [text, setText] = useState("");
+    const [text, setText] = useState("1");
 
     let params = useParams();
 
@@ -30,7 +30,6 @@ const Recipe = (e) => {
     return (
         <div className="container">
             <h3 className="recipe-title">{recipe.title}</h3>
-
             <div className="container-info">
                 <img className="recipe-img" src={`${recipe.image}`} alt="" />
                 <div className="p-container">
